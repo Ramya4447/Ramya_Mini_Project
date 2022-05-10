@@ -1,0 +1,88 @@
+body {
+    padding-top: 5vh;
+    background-image: linear-gradient(rgb(187, 187, 245), rgb(247, 213, 219));
+}
+
+#main {
+    border-style: solid;
+    height: fit-content;
+    width: fit-content;
+    background-color: aquamarine;
+    padding: 4vh;
+}
+
+#operator {
+    background-color: aquamarine;
+    border-style: none;
+    font-size: 4vh;
+}
+
+.questionbox {
+    height: 5vh;
+    width: 10vh;
+    border-style: none;
+    font-size: 3vh;
+    border-radius: 2px;
+}
+
+.answerbox {
+    height: 4vh;
+    width: 8vh;
+    border-style: none;
+    font-size: 3vh;
+    border-radius: 2px;
+}
+
+#startgame {
+    height: 5vh;
+    width: 15vh;
+    border-style: none;
+    font-style: 5vh;
+    background-color: rgb(49, 143, 111);
+    color: white;
+    font-size: 3vh;
+    text-align: center;
+    border-radius: 15px;
+}
+
+img {
+    height: 30vh;
+    width: 30vh;
+}
+
+#try-div {
+    height: 60vh;
+    width: 60vh;
+}
+
+#tryagain {
+    height: 5vh;
+    width: 15vh;
+    border-style: none;
+    background-color: black;
+    color: white;
+    font-size: 2vh;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#finalscore {
+    height: 5vh;
+    width: 25vh;
+    border-style: none;
+}
+
+#timeleft {
+    margin-left: 5vh;
+}
+
+#homepage {
+    height: 5vh;
+    width: 20vh;
+    border-style: none;
+    background-color: black;
+    color: white;
+    font-size: 2vh;
+    text-align: center;
+    border-radius: 10px;
+}
