@@ -24,6 +24,14 @@ function timing() {
             if (highscore < score) {
                 highscore = score;
             }
+            if (score < 15 * 5) {
+                localStorage.setItem('IQ', 'Low')
+            }
+            else if (score >= 15 * 5 && score < 30 * 5) {
+                localStorage.setItem('IQ', 'Medium')
+            } else if (score >= 30 * 5) {
+                localStorage.setItem('IQ', 'High')
+            }
             localStorage.setItem("high", highscore);
             window.location.href = "tryagain.html";
         }
@@ -192,6 +200,14 @@ function option(choice) {
         if (highscore < score) {
             highscore = score;
         }
+        if (score < 15 * 5) {
+            localStorage.setItem('IQ', 'Low')
+        }
+        else if (score >= 15 * 5 && score < 30 * 5) {
+            localStorage.setItem('IQ', 'Medium')
+        } else if (score >= 30 * 5) {
+            localStorage.setItem('IQ', 'High')
+        }
         localStorage.setItem("high", highscore);
         window.location.href = "tryagain.html";
     }
@@ -205,6 +221,7 @@ function finalscoree() {
     var dupscore = localStorage.getItem("scoree");
     document.getElementById("finalscore").innerHTML = dupscore;
     document.getElementById("highscore").innerHTML = localStorage.getItem("high", highscore);
+    document.getElementById("IQ").innerHTML = localStorage.getItem("IQ");
     var initscore = 0;
     localStorage.setItem("scoree", initscore);
 }
