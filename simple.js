@@ -4,7 +4,7 @@ var highscore = 0;
 var timedisplay;
 var time;
 var colordisplay;
-highscore = localStorage.getItem("high", highscore);
+highscore = localStorage.getItem("high");
 if(highscore=='null'){
     highscore = 0;
 }
