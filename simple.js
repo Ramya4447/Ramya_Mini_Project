@@ -4,10 +4,7 @@ var highscore = 0;
 var timedisplay;
 var time;
 var colordisplay;
-highscore = localStorage.getItem("high");
-if(highscore=='null'){
-    highscore = 0;
-}
+highscore = localStorage.getItem("high", highscore);
 
 function startgame() {
     question();
