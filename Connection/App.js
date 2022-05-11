@@ -20,6 +20,8 @@ let signUpButton = document.getElementById('signup')
 function signup() {
     console.log("clicked")
 
+    localStorage.setItem("high",0);
+
     var email = document.getElementById("inputEmail").value
     var password = document.getElementById("inputPassword").value
 
@@ -68,6 +70,8 @@ function signup() {
 //SignIn function
 function login() {
     console.log("clicked")
+
+    localStorage.setItem("high",0);
 
     var email = document.getElementById("inputEmail")
     var password = document.getElementById("inputPassword")
